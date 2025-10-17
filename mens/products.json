@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "title": "Classic White T-Shirt",
+    "price": 799,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+  },
+  {
+    "id": 2,
+    "title": "Casual Black T-Shirt",
+    "price": 899,
+    "image": "https://d118ps6mg0w7om.cloudfront.net/media/catalog/product/s/s/fit-in/1000x1250/ss-24_4000x5000-04-10-24_mfs-14940-s-01-black_1_mfs-14940-s-01-black.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Denim Blue Shirt",
+    "price": 1499,
+    "image": "https://reidandtaylor.in/cdn/shop/files/RT-224-Dark-Blue_1_36994d56-7ebd-43ec-8b90-b90597590bca.jpg?v=1754392238"
+  },
+  {
+    "id": 4,
+    "title": "Checked Casual Shirt",
+    "price": 1299,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9iocCKX6tToZRth2SaBp_sm9xbcpPvO6mPA&s"
+  },
+  {
+    "id": 5,
+    "title": "Grey Polo T-Shirt",
+    "price": 1099,
+    "image": "https://imagescdn.louisphilippe.com/img/app/product/3/39690885-14123577.jpg?auto=format&w=390"
+  },
+  {
+    "id": 6,
+    "title": "Navy Blue Formal Shirt",
+    "price": 1799,
+    "image": "https://cobbitaly.com/cdn/shop/products/NVFSRE4092NAVYBLUE_1.jpg?v=1756380739"
+  },
+  {
+    "id": 7,
+    "title": "Green Cotton T-Shirt",
+    "price": 749,
+    "image": "https://dukaan.b-cdn.net/700x700/webp/download-and-upload/5f216318-9dc5-41a9-8ce8-eccd553f130b.png"
+  },
+  {
+    "id": 8,
+    "title": "Striped Half Sleeve Shirt",
+    "price": 1399,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg108vNdUl--mKGsbir6kNz76yRoSHKTgjtA&s"
+  },
+  {
+    "id": 9,
+    "title": "Red Casual T-Shirt",
+    "price": 899,
+    "image": "https://houseofaldeno.com/cdn/shop/files/Aldeno_March24_1135.jpg?v=1755593738&width=1000"
+  },
+  {
+    "id": 10,
+    "title": "Sky Blue Linen Shirt",
+    "price": 1599,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp_l1ag_daH97ytEkj3fswQfzBX8hg0qd52Q&s"
+  },
+  {
+    "id": 11,
+    "title": "Black Slim Fit Jeans",
+    "price": 1799,
+    "category": "pants",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRr3RBiQuxqsgNN5D8EB8KA4Ix6mpDm-uyQeYKAMDRywlDDpYG0ZwTtrd1-QQzpMpjrFZ1g4I1d280grTA4IwU9Wnt1EoU_O6njUb4YxRls8X85B1Qd48er6Q&usqp=CAc"
+  },
+  {
+    "id": 12,
+    "title": "Blue Denim Jeans",
+    "price": 1699,
+    "category": "pants",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+  },
+  {
+    "id": 13,
+    "title": "Grey Chinos Pants",
+    "price": 1599,
+    "category": "pants",
+    "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRr3RBiQuxqsgNN5D8EB8KA4Ix6mpDm-uyQeYKAMDRywlDDpYG0ZwTtrd1-QQzpMpjrFZ1g4I1d280grTA4IwU9Wnt1EoU_O6njUb4YxRls8X85B1Qd48er6Q&usqp=CAc"
+  },
+  {
+    "id": 14,
+    "title": "Khaki Casual Trousers",
+    "price": 1499,
+    "category": "pants",
+    "image": "https://www.richlook.in/cdn/shop/products/1_f0ec0b0e-ca91-4795-ba27-8c43728c07fd.jpg?v=1754918552"
+  },
+  {
+    "id": 15,
+    "title": "Beige Formal Pants",
+    "price": 1899,
+    "category": "pants",
+    "image": "https://imagescdn.louisphilippe.com/img/app/product/3/39695212-14222039.jpg?auto=format&w=390"
+  }
+]

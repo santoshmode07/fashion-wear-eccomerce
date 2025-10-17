@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="webname">
+            <h3>Fashion-Wear</h3>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="#faqAccordion">FAQ?</a></li>
+                <li><a href="#products">Products</a></li>
+                <li style="cursor: not-allowed;">Cart</li>
+                <li id="logoutBtn" style="cursor: pointer;">Logout</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div id="carouselExampleIndicators" class="carousel slide" >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://janasya.com/cdn/shop/files/Rakhi-Sale-Banner_1cabf2eb-0b65-4eaa-9239-c2bc1d047270.webp?v=1753450226&width=1920" style="height: 567px;" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://acriine.in/cdn/shop/files/3_6c918e21-4138-4518-9a42-25436020d0f8.jpg?v=1752478726&width=3400" style="height: 567px;" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://pbs.twimg.com/ext_tw_video_thumb/887279037336477696/pu/img/3G3JQREjsd-Ku5d3.jpg:large" style="height:567px;" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="welcome">
+            <h1 style="color:white">Welcome to our E-commerce Website</h1>
+            <p>Discover the best products and enjoy a seamless shopping experience.</p>
+            <a href="#products"><button id="category">Shop Now</button></a>
+        </div>
+        <div class="container-fluid py-4">
+            <h2 class="mb-4 fw-bold ms-4 ms-md-4 ms-lg-4">Shop By Category</h2>
+            <div class="containerr">
+              <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                      <a href="mens/mens.html">
+                        <div class="card h-100">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiRgLKPlFknKk72xSBU2SwTLiJmhL4L834HQ&s" class="card-img-top mt-2" alt="Product 3">
+                          <div class="card-body mb-4">
+                            <h5 class="fw-bold card-title" style="text-align: center;">Men's Wear</h5>
+                            <p class="card-text" style="text-align: center;">Amazing product for Party Purpose.</p>
+                          </div>
+                        </div>
+                      </a>
+                </div>
+                      
+            
+                  <!-- Card 2 -->
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <a href="#products">
+                    <div class="card h-100">
+                      <img src="https://www.biba.in/on/demandware.static/-/Library-Sites-BibaSharedLibrary/en_US/dwaa5f4767/A-Kriti/new/k1-june14.jpg" class="card-img-top mt-2" alt="Product 3">
+                      <div class="card-body mb-4">
+                        <h5 class="fw-bold card-title" style="text-align: center;">Women's Wear</h5>
+                        <p class="card-text" style="text-align: center;">Amazing product for Daily use.</p>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+            
+                  <!-- Card 3 -->
+                  <div class="col-12  col-md-6 col-lg-4">
+                    <a href="#products">
+                    <div class="card h-100">
+                      <img src="https://img.faballey.com/images/Product/IGS00052Z/d3.jpg" class="card-img-top mt-2" alt="Product 3">
+                      <div class="card-body mb-4" >
+                        <h5 class="fw-bold card-title" style="text-align: center;">Kid's Wear</h5>
+                        <p class="card-text" style="text-align: center;">Amazing product for daily use.</p>
+                        <div id="products"></div>
+                      </div>
+                    </div>
+                  </a>
+                  </div>
+                </div>
+                </div>
+        </div>
+        <div class="container-fluid py-4">
+            <h2 class="mb-4 fw-bold ms-4 ms-md-4 ms-lg-4">Featured Products </h2>
+            <div class="containerr">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20240702/cxg4/66842a911d763220faa803b1/-473Wx593H-700155677-pink-MODEL.jpg" class="card-img-top mt-2" alt="Product 3">
+                      <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Product 1</h5>
+                        <p class="card-text" style="text-align: center;">Amazing product for Party Purpose.</p>
+                  
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                          <div style="font-size: 20px;">
+                            <span class="mb-1" style="font-size: 16px;font-weight:700;color:rgb(77, 73, 73)">Get 30% off</span><br>
+                            <span>
+                              <span class="text-muted text-decoration-line-through">$629</span>
+                              <span class="text-success ms-2" style="font-weight:600;">$499</span>
+                            </span>
+                          </div>
+                          <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  
+        
+              <!-- Card 2 -->
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="https://surhi.in/cdn/shop/collections/Mens_Wear.webp?v=1721029303" class="card-img-top mt-2" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Product 2</h5>
+                    <p class="card-text" style="text-align: center;">Amazing product for Daily use.</p>
+              
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div style="font-size: 20px;">
+                        <span class="mb-1" style="font-size: 16px;font-weight:700;color:rgb(77, 73, 73)">Get 19% off</span><br>
+                        <span>
+                          <span class="text-muted text-decoration-line-through">$375</span>
+                          <span class="text-success ms-2" style="font-weight:600;">$236</span>
+                        </span>
+                      </div>
+                      <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+        
+              <!-- Card 3 -->
+              <div class="col-12  col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250724124357770982/male_3.jpg" class="card-img-top mt-2" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Product 3</h5>
+                    <p class="card-text" style="text-align: center;">Amazing product for daily use.</p>
+              
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div style="font-size: 20px;">
+                        <span class="mb-1" style="font-size: 16px;font-weight:700;color:rgb(77, 73, 73)">Get 60% off</span><br>
+                        <span>
+                          <span class="text-muted text-decoration-line-through">$830</span>
+                          <span class="text-success ms-2" style="font-weight:600;">$350</span>
+                        </span>
+                      </div>
+                      <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZJMSrE44JVjxzdzsJrZEyzWTFvGJcViXSA&s" class="card-img-top mt-2" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Product 4</h5>
+                    <p class="card-text" style="text-align: center;">Amazing product for daily use.</p>
+              
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div style="font-size: 20px;">
+                        <span class="mb-1" style="font-size: 16px;font-weight:700;color:rgb(77, 73, 73)">Get 8% off</span><br>
+                        <span>
+                          <span class="text-muted text-decoration-line-through">$276</span>
+                          <span class="text-success ms-2" style="font-weight:600;">$238</span>
+                        </span>
+                      </div>
+                      <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="https://www.bullionknot.com/cdn/shop/files/04_optimized_500_54eff23b-2b8a-4456-abcc-54d3b946c04c.jpg" class="card-img-top mt-2" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Product 5</h5>
+                    <p class="card-text" style="text-align: center;">Amazing product for daily use.</p>
+              
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div style="font-size: 20px;">
+                        <span class="mb-1" style="font-size: 16px;font-weight:700;color:rgb(77, 73, 73)">Get 25% off</span><br>
+                            <span>
+                          <span class="text-muted text-decoration-line-through">$550</span>
+                          <span class="text-success ms-2" style="font-weight:600;">$399</span>
+                        </span>
+                      </div>
+                      <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <img src="https://static.wixstatic.com/media/4f249a_37c8c911d6fa402cb25af15e3a1a6baa~mv2.jpg/v1/fill/w_560,h_780,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4f249a_37c8c911d6fa402cb25af15e3a1a6baa~mv2.jpg" class="card-img-top mt-2" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title" style="text-align: center;">Product 6</h5>
+                    <p class="card-text" style="text-align: center;">Amazing product for daily use.</p>
+              
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div style="font-size: 20px;">
+                        <span class="mb-1" style="font-size: 16px;font-weight:700;color:rgb(77, 73, 73)">Get 10% off</span><br>
+                         <span>
+                          <span class="text-muted text-decoration-line-through">$275</span>
+                          <span class="text-success ms-2" style="font-weight:600;">$220</span>
+                        </span>
+                      </div>
+                      <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            </div>
+          </div>
+
+          <div class="container my-5">
+            <h3 class="mb-4 fw-bold">Frequently Asked Questions</h3>
+          
+            <div class="accordion" id="faqAccordion">
+          
+              <!-- Question 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" style="font-weight: 500;" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    What is your return policy?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                     data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    You can return most items within 30 days of purchase with the original packaging and receipt.
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Question 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" style="font-weight: 500;" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How long does delivery take?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                     data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Delivery usually takes 3-5 business days depending on your location.
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Question 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button"  style="font-weight: 500;" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I change my delivery address after placing an order?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                     data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Yes, you can change your address within 12 hours of placing the order by contacting customer support.
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Question 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" style="font-weight: 500;" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Do you offer international shipping?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                     data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Currently, we only offer shipping within India. International shipping will be added soon.
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Question 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" style="font-weight: 500;" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    What payment methods are accepted?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                     data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    We accept credit/debit cards, UPI, net banking, and COD (Cash on Delivery).
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+                <!-- Toast Container -->
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999">
+                <div id="logoutToast" class="toast text-bg-danger" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="https://png.pngtree.com/png-clipart/20201029/ourmid/pngtree-circle-clipart-red-circle-png-image_2381952.jpg" height="15px" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Logout</strong>
+                    <small>Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    You have successfully logged out.
+                </div>
+                </div>
+            </div>
+  
+            <script src="script.js">
+              </script>
+              
+            
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  
+</body>
+</html>
