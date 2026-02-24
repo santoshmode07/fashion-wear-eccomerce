@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Cartoon Print T-Shirt",
+    "price": 499,
+    "image": "https://images.unsplash.com/photo-1519704943960-da9750f76449"
+  },
+  {
+    "id": 2,
+    "title": "Kids Denim Overalls",
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1519234221762-fbf651233a8c"
+  },
+  {
+    "id": 3,
+    "title": "Colorful Raincoat",
+    "price": 699,
+    "image": "https://images.unsplash.com/photo-1556015048-4d3aa10df74c"
+  },
+  {
+    "id": 4,
+    "title": "Baby Girl Pink Dress",
+    "price": 999,
+    "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7"
+  },
+  {
+    "id": 5,
+    "title": "Soft Cotton Pajamas",
+    "price": 599,
+    "image": "https://images.unsplash.com/photo-1522771935876-2497116a7d9e"
+  }
+]

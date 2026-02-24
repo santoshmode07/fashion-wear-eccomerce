@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kid's Clothing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome for icons -->
+  <style>
+    body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(213, 226, 240);
+    }
+    .card-img-top {
+      padding: 30px;
+      object-fit: contain;
+      height: 260px;
+    }
+    .card {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-0.5em);
+    }
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .home-btn:hover {
+      background-color: #0056b3;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Home Button -->
+  <a href="../Ecommerce.html" class="home-btn">
+    <i class="fas fa-arrow-left"></i> Home
+  </a>
+
+  <h1 class="text-center my-4 fw-bold">Kid’s Clothing</h1>
+  <div class="container">
+    <div class="row g-4" id="products">
+      <!-- Product cards will be dynamically added here -->
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script>
+    const products = [
+      {
+        "id": 1,
+        "title": "Cartoon Print T-Shirt",
+        "price": 499,
+        "image": "https://images.unsplash.com/photo-1519704943960-da9750f76449"
+      },
+      {
+        "id": 2,
+        "title": "Kids Denim Overalls",
+        "price": 899,
+        "image": "https://images.unsplash.com/photo-1519234221762-fbf651233a8c"
+      },
+      {
+        "id": 3,
+        "title": "Colorful Raincoat",
+        "price": 699,
+        "image": "https://images.unsplash.com/photo-1556015048-4d3aa10df74c"
+      },
+      {
+        "id": 4,
+        "title": "Baby Girl Pink Dress",
+        "price": 999,
+        "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7"
+      },
+      {
+        "id": 5,
+        "title": "Soft Cotton Pajamas",
+        "price": 599,
+        "image": "https://images.unsplash.com/photo-1522771935876-2497116a7d9e"
+      }
+    ];
+
+    const container = document.getElementById("products");
+    products.forEach(product => {
+      const div = document.createElement("div");
+      let num = Math.floor(Math.random() * (80 - 3 + 1)) + 3;
+      div.className = "col-12 col-md-6 col-lg-4";
+      div.innerHTML = `
+        <div class="card h-100">
+          <img src="${product.image}" alt="${product.title}" class="card-img-top mt-2">
+          <div class="card-body">
+            <h5 class="card-title text-center">${product.title}</h5>
+            <p class="card-text text-center">Amazing product for daily use.</p>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <div style="font-size: 20px;">
+                <span class="mb-1" style="font-size: 16px; font-weight: 700; color: rgb(77, 73, 73);">Get ${num}% off</span><br>
+                <span>
+                  <span class="text-muted text-decoration-line-through">$${product.price}</span>
+                  <span class="text-success ms-2" style="font-weight: 600;">$${((product.price - (product.price) * (num / 100))).toFixed(0)}</span>
+                </span>
+              </div>
+              <a href="#" class="fw-bold btn btn-primary mt-4">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
