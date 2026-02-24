@@ -9,7 +9,7 @@ This project includes a landing page and separate category pages for:
 - Women's wear
 - Kid's wear
 
-The landing page (`Ecommerce.html`) contains:
+The landing page (`index.html`) contains:
 - A fixed top navigation bar
 - Hero carousel and welcome section
 - Category cards linking to each category page
@@ -31,7 +31,7 @@ Each category page renders product cards dynamically using JavaScript arrays in 
 
 ```text
 Eccomerce/
-├── Ecommerce.html
+├── index.html
 ├── styles.css
 ├── script.js
 ├── mens/
@@ -47,7 +47,7 @@ Eccomerce/
 
 ## How to Run
 
-1. Open `Ecommerce.html` in your browser.
+1. Open `index.html` in your browser.
 2. Click a category card to navigate to product listing pages.
 
 No build setup or package installation is required.
